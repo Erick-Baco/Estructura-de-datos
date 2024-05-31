@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.DisplacementMap?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.FloatMap?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #090a0c;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fes.aragon.controller.CatalanController">
+   <children>
+      <Label fx:id="titulo" layoutX="210.0" layoutY="30.0" style="-fx-text-fill: blue; -fx-background-radius: 50; -fx-effect: dropshadow(one-pass-box, blue, 8, 0.0, 2, 0);" text="Catalan">
+         <font>
+            <Font name="FreeMono Bold" size="41.0" />
+         </font></Label>
+      <TextField fx:id="dato" layoutX="79.0" layoutY="128.0" prefHeight="24.0" prefWidth="113.0">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect></TextField>
+      <Label fx:id="instrucciones" layoutX="79.0" layoutY="92.0" text="Introduce el N-esimo numero de catalan a calcular" textFill="WHITE">
+         <font>
+            <Font name="FreeMono Bold" size="17.0" />
+         </font></Label>
+      <Button fx:id="botonaccion" layoutX="225.0" layoutY="128.0" mnemonicParsing="false" onAction="#calcularCatalan" text="Calcular">
+         <effect>
+            <DropShadow />
+         </effect></Button>
+      <Label fx:id="etiquetaresultado" layoutX="51.0" layoutY="198.0" text="Resultado" textFill="#fffdfd">
+         <font>
+            <Font name="FreeMono Bold" size="20.0" />
+         </font></Label>
+      <TextField fx:id="resultado" disable="true" editable="false" layoutX="168.0" layoutY="196.0" prefHeight="24.0" prefWidth="131.0">
+         <effect>
+            <Blend>
+               <topInput>
+                  <DisplacementMap>
+                     <mapData>
+                        <FloatMap />
+                     </mapData>
+                  </DisplacementMap>
+               </topInput>
+            </Blend>
+         </effect></TextField>
+   </children>
+</AnchorPane>

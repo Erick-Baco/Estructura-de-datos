@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="panelPrincipal" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fes.aragon.controller.VerdugoController">
+    <children>
+        <Button fx:id="desaparecer" layoutX="609.0" layoutY="231.0" onAction="#desaparecerPeriodistas" text="Adios Periodistas" />
+        <TextField fx:id="numerodeDesafortunados" layoutX="588.0" layoutY="115.0" promptText="Periodistas" />
+        <TextField fx:id="campoPosicionCompanero" layoutX="588.0" layoutY="173.0" promptText="Mi real" />
+      <Label layoutX="316.0" layoutY="21.0" opacity="0.99" style="-fx-text-fill: black; -fx-background-radius: 30; -fx-effect: dropshadow(one-pass-box, red, 8, 0.0, 2, 5);" text="Verdugo">
+         <font>
+            <Font name="System Bold" size="41.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="VerEspera" fitHeight="131.0" fitWidth="142.0" layoutX="209.5" layoutY="229.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../recursos/VI.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="VerMatando" fitHeight="131.0" fitWidth="142.0" layoutX="202.0" layoutY="275.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../recursos/arma.jpeg" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>

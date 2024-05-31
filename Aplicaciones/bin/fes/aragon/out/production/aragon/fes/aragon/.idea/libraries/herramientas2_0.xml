@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="herramientas2.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/doc/herramientas2.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/doc/herramientas2.0.jar!/" />
+    </SOURCES>
+  </library>
+</component>

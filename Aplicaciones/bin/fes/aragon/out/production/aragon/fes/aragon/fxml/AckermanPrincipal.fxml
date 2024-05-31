@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="fondo" prefHeight="577.0" prefWidth="974.0" style="-fx-background-color: #c3c4c4;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fes.aragon.controller.AckermanController">
+   <children>
+      <Label fx:id="titulo" layoutX="303.0" layoutY="34.0" text="Calculadora de Ackermann">
+         <font>
+            <Font name="FreeMono" size="26.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.3576185703277588" green="0.20638401806354523" blue="0.3684210479259491" opacity="0.9700000286102295" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill></Label>
+      <Label fx:id="indicaciones" layoutX="14.0" layoutY="101.0" text="Ingresa los valores de M y N separados por un espacio:">
+         <font>
+            <Font name="FreeMono" size="19.0" />
+         </font></Label>
+      <TextField fx:id="campoM" editable="false" layoutX="38.0" layoutY="289.0" prefHeight="24.0" prefWidth="52.0" promptText="M" />
+      <TextField fx:id="campoN" editable="false" layoutX="131.0" layoutY="289.0" prefHeight="24.0" prefWidth="52.0" promptText="N" />
+      <Button layoutX="215.0" layoutY="149.0" mnemonicParsing="false" onAction="#calcularAckermann" text="Calcular" />
+      <Label fx:id="textoM" layoutX="56.0" layoutY="254.0" text="M">
+         <font>
+            <Font name="FreeMono Bold" size="28.0" />
+         </font></Label>
+      <Label fx:id="textoN" layoutX="149.0" layoutY="255.0" text="N">
+         <font>
+            <Font name="FreeMono Bold" size="26.0" />
+         </font></Label>
+      <Label fx:id="textoAckermann" layoutX="205.0" layoutY="260.0" text="Resultado de Ackermann:">
+         <font>
+            <Font name="FreeMono" size="17.0" />
+         </font></Label>
+      <Label fx:id="textoProfundidad" layoutX="456.0" layoutY="256.0" text="Profundidad de recursión:">
+         <font>
+            <Font name="FreeMono" size="22.0" />
+         </font></Label>
+      <TextField fx:id="datos" layoutX="25.0" layoutY="148.0" promptText="M N" />
+      <TextField fx:id="campoAckermann" editable="false" layoutX="267.0" layoutY="289.0" prefHeight="24.0" prefWidth="109.0" promptText="Ackermann" />
+      <TextField fx:id="campoProfundidad" editable="false" layoutX="477.0" layoutY="289.0" prefHeight="24.0" prefWidth="201.0" promptText="Profundidad" />
+   </children>
+   <effect>
+      <InnerShadow />
+   </effect>
+</AnchorPane>
